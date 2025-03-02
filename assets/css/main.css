@@ -1005,7 +1005,7 @@ body {
   .about--banner table th, .about--banner table td {
     padding: 12px 15px;
     text-align: center; /* Center-align text */
-    border: 1px solid #091979;
+    border: 1px solid #fff;
     vertical-align: middle; /* Vertically center text */
   }
   
