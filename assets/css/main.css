@@ -971,6 +971,8 @@ body {
 }
 
 /* About section styles */
+
+
 .about {
     position: relative;
     display: flex;
@@ -982,6 +984,79 @@ body {
     margin: 0 auto;
 }
 
+/************************************************************************************************************************************/
+.about--banner table {
+    margin-top: 20px;
+    overflow-x: auto; /* Allow horizontal scrolling for small screens */
+    width: 1200px;
+    min-width: 100%; /* Ensure the table is at least as wide as its container */
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    table-layout: fixed; /* Use fixed table layout */
+  }
+  
+  .about--banner table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    table-layout: fixed; /* Use fixed table layout */
+  }
+  
+  .about--banner table th, .about--banner table td {
+    padding: 12px 15px;
+    text-align: center; /* Center-align text */
+    border: 1px solid #091979;
+    vertical-align: middle; /* Vertically center text */
+  }
+  
+  /* Adjust column widths - first two columns are half size */
+  .about--banner table th:nth-child(1),
+  .about--banner table td:nth-child(1),
+  .about--banner table th:nth-child(2),
+  .about--banner table td:nth-child(2) {
+    width: 14.29%; /* 1/7 of the table width (100% ÷ 7 = 14.29%) */
+  }
+  
+  .about--banner table th:nth-child(n+3),
+  .about--banner table td:nth-child(n+3) {
+    width: 28.57%; /* 2/7 of the table width (100% ÷ 3.5 = 28.57%) */
+  }
+  
+  .about--banner table th {
+    background-color: black;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  
+  .about--banner table td {
+    background-color: black;
+    color: #fff;
+    font-size: 14px;
+  }
+  
+  .about--banner table tr:hover td {
+    background-color: #504b4b;
+  }
+  
+  /* Responsive Design for Table */
+  @media (max-width: 768px) {
+    .about--banner table {
+      overflow-x: auto; /* Enable horizontal scrolling on small screens */
+    }
+    
+    .about-table table {
+      min-width: 600px; /* Ensure the table doesn't shrink too much */
+    }
+    
+    .about--banner table th,
+    .about--banner table td {
+      padding: 10px;
+      font-size: 12px;
+    }
+  }
+/**********************************************************************************************************************************************************/  
 @media (max-width: 1180px) {
     .about {
         max-width: 100%;
