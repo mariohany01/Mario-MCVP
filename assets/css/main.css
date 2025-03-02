@@ -787,7 +787,7 @@ body {
 .work {
     position: relative;
     display: flex;
-    width: 960px;
+    width: 1300px;
     max-width: 80%;
     height: 100%;
     flex-direction: column;
@@ -1047,7 +1047,7 @@ body {
     }
     
     .about-table table {
-      min-width: 600px; /* Ensure the table doesn't shrink too much */
+      min-width: 500px; /* Ensure the table doesn't shrink too much */
     }
     
     .about--banner table th,
@@ -1265,6 +1265,20 @@ body {
     }
 }
 
+
+/* 
+.about {
+    position: relative;
+    display: flex;
+    width: 900px;
+    max-width: 75%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+} 
+*/
+
 /* Contact section styles */
 .contact {
     position: fixed;
@@ -1272,11 +1286,20 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("../img/contact-visual.png");
+    /*background-image: url("../img/contact-visual.png"); */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.contact--lockup img {
+    position: relative;
+    bottom: 0px;
+    right: 0px;
+    max-width: 150%;
+    left: 350px;
+}
+
 
 .contact--lockup {
     position: relative;
