@@ -1286,20 +1286,18 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    /*background-image: url("../img/contact-visual.png"); */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .contact--lockup img {
-    position: relative;
-    bottom: 0px;
-    right: 0px;
-    max-width: 150%;
-    left: 350px;
+    position: fixed;
+    bottom: 250px;
+    left: 500px;
+    max-width: 60%;
+    z-index: -1; /* High z-index to ensure it's on top */
 }
-
 
 .contact--lockup {
     position: relative;
@@ -1311,6 +1309,121 @@ body {
     justify-content: flex-end;
     margin: 0 auto;
 }
+
+/* Position "Automation" */
+.hover-container.automation {
+    position: absolute;
+    top: 580px; /* Adjust as needed */
+    left: 0px; /* Adjust as needed */
+}
+
+/* Resize "Automation" text */
+.hover-container.automation .hover-text {
+    font-size: 20px; /* Adjust the size as needed */
+}
+
+/* Position "Website" */
+.hover-container.website {
+    position: absolute;
+    top: 580px; /* Adjust as needed */
+    left: 300px; /* Adjust as needed */
+}
+/* Resize "Website" text */
+.hover-container.website .hover-text {
+    font-size: 20px; /* Adjust the size as needed */
+}
+
+
+/* Position "appsheet" */
+.hover-container.Appsheet {
+    position: absolute;
+    top: 500px; /* Adjust as needed */
+    left: 500px; /* Adjust as needed */
+}
+/* Resize "Website" text */
+.hover-container.appsheet .hover-text {
+    font-size: 20px; /* Adjust the size as needed */
+}
+
+
+/* Position "Social" */
+.hover-container.Social {
+    position: absolute;
+    top: 600px; /* Adjust as needed */
+    right: 1px; /* Adjust as needed */
+}
+/* Resize "SOCIAL" text */
+.hover-container.Social .hover-text {
+    font-size: 20px; /* Adjust the size as needed */
+}
+
+
+/* Position "Teaching" */
+.hover-container.Teaching {
+    position: absolute;
+    top: 600px; /* Adjust as needed */
+    left: 1000px; /* Adjust as needed */
+}
+/* Resize "Website" text */
+.hover-container.Teaching .hover-text {
+    font-size: 20px; /* Adjust the size as needed */
+}
+
+
+
+.hover-container {
+    display: inline-block;
+    margin-top: 10px; /* Adjust spacing as needed */
+}
+
+.hover-text {
+    cursor: pointer; /* Changes cursor to indicate interactivity */
+    color: white; /* Optional: Style the hoverable text */
+    font-size: 24px; /* Adjust h2 font size */
+}
+
+.hover-box {
+    display: none;
+    position: fixed; /* Fixed position to fill the page */
+    top: 150px;
+    left: 0;
+    width: 70%;
+    height: auto;
+    z-index: 10; /* High z-index to ensure it's on top */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Show the hover-box on hover */
+.hover-container:hover .hover-box {
+    display: flex; /* Use flexbox to center the image */
+    animation: fadeIn 0.5s ease-in-out; /* Apply the fade-in animation */
+}
+
+/* Style the image inside the hover-box */
+.hover-box img {
+    max-width: 50%;
+    max-height: 50%;
+    object-fit: contain; /* Ensure the image fits within the box */
+}
+
+
+
+
+
+
+
+
 
 @media (max-width: 1180px) {
     .contact--lockup {
