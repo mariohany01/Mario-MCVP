@@ -668,9 +668,9 @@ body {
 .intro--banner img {
     position: absolute;
     bottom: 21px;
-    right: -12px;
-    max-width: 50%;
-    left: 350px;
+    /* right: -12px; */
+    max-width: 90%;
+    left: 150px;
 }
 
 .intro--options {
