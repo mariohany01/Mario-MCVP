@@ -1380,7 +1380,9 @@ body {
     cursor: pointer; /* Changes cursor to indicate interactivity */
     color: white; /* Optional: Style the hoverable text */
     font-size: 24px; /* Adjust h2 font size */
+
 }
+
 
 .hover-box {
     display: none;
@@ -1404,6 +1406,7 @@ body {
     }
 }
 
+
 /* Show the hover-box on hover */
 .hover-container:hover .hover-box {
     display: flex; /* Use flexbox to center the image */
@@ -1416,6 +1419,7 @@ body {
     max-height: 50%;
     object-fit: contain; /* Ensure the image fits within the box */
 }
+
 
 
 
@@ -1520,6 +1524,25 @@ body {
     flex-direction: column;
     align-items: center;
     color: #fff;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Start with 0 opacity (fully transparent) */
+    }
+    to {
+        opacity: 1; /* End with 1 opacity (fully visible) */
+    }
+}
+
+/* Style for the image */
+.work-request img {
+    position: relative;
+    max-width: 250%;
+    left: 350px;
+    opacity: 0; /* Start with the image hidden */
+    animation: fadeIn 2s ease-in-out forwards; /* Apply the fade-in animation */
+    animation-delay: 2s; /* Optional: Delay the animation by 0.5 seconds */
 }
 
 .work-request input[type="submit"] {
